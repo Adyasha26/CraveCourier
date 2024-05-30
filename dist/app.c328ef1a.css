@@ -1,0 +1,209 @@
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navitems{
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+   
+}
+
+.logo{
+    width: 200px;
+    height:120px;
+}
+
+.main-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.mainimg{
+    height: 600px;
+    width: 98%;
+    margin: 20px;
+    z-index: -1;
+}
+
+
+
+.text-img{
+    
+    width: 200px;
+    height: 170px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+   color: white;
+    font-size: 80px;
+    text-align: left;
+}
+
+.searchBar{
+    position: absolute;
+    bottom: 10%;
+    left:30%;
+    width: 70%;
+    height: 70%;
+    
+  }
+
+  
+  .searchBar input{
+    position: absolute;
+    bottom: 10%;
+   height: 5%;
+    width: 60%;
+  }
+
+  .srchicon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left:62%;
+    bottom: 9%;
+  }
+
+  .filter-Button{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-Button span{
+    margin-right: 10px;
+  }
+
+  .upper{
+    position: relative;
+  text-align: center;
+  color: white;
+  }
+
+  
+  .res-card{
+    display: flex;
+    flex-direction:column;
+     width:380px;
+     height:380px;
+     border-radius: 10%;
+     margin-bottom: 40px;
+     position: relative;
+  }
+
+  .res-card:hover{
+    box-shadow: 1px 1px 8px #f5f6f7;
+    background-color:rgb(219, 215, 215) ;
+    transform: translateY(-2px);
+}
+
+.res-image{
+  width:95%;
+  height:60%;
+
+}
+
+
+.res-img{
+ margin:5px;
+ width:100%;
+ height:90%;
+ position:relative;
+ border-radius: 10%;
+ z-index: -1;
+  } 
+
+  .bottom-left {
+    position: absolute;
+    bottom: 115px;
+    left: 6px;
+    z-index: 1;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+
+
+  .res-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+
+  .cuisines{
+    font-size: 15px;
+    color: grey;
+
+  }
+  .clock{
+
+  margin-left: 5px;
+ margin-top: 5px;
+
+    margin-bottom: -4px;
+  }
+
+  .menu-arrow{
+    
+    bottom: 8px;
+    right: 16px;
+    margin-bottom: -5px;
+  }
+
+  .head-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .res-cards{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-evenly;
+ }
+
+ /* .container my-5{
+  height: 80%;
+  width: 100%;
+ }
+ .upper {
+  
+  text-align:center;
+  display:flex;
+   justify-content:center;
+   margin: 20px;
+   font-size: 30px;
+   color: black;
+ }
+ .upper span{
+  margin-left: 20px;
+ }
+ .middle{
+  display:flex;
+  justify-content:center;
+ padding-left: 30%;
+ padding-right: 30%;
+ font-size: 18px;
+
+ } */
+
+
+/*# sourceMappingURL=/app.c328ef1a.css.map */
