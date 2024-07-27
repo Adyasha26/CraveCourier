@@ -62,5 +62,6 @@ exports.login=(req,res)=>{
         },
         token:accessToken,
         });
-    }).catch(err=>res.status(500).send("Server not available"));
+    }).catch(
+        err=>res.status(500).send("Server not available"));
 };

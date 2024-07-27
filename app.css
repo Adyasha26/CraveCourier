@@ -111,8 +111,9 @@ li{
      width:380px;
      height:350px;
      border-radius: 10%;
-     margin-bottom: 15px;
+     margin-bottom: 20px;
      position: relative;
+     
   }
 
   .res-card:hover{
@@ -121,19 +122,34 @@ li{
     transform: translateY(-2px);
 }
 
-.shimmers-card{
+
+ .shimmer-card {
   display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 350px;
+  background-color: #FFF;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+  
+  /* display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 350px;
   background-color: #d40f0f;
-    flex-direction:column;
-     width:380px;
-     height:350px;
-     border-radius: 10%;
-     margin-bottom: 15px;
-     position: relative;
+  border-radius: 10%;
+  margin-bottom: 15px;
+  position: relative; 
+ -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 40px auto;  */
 
 }
-.shimmer-card {
-  position: relative;
+  /* position: relative;
   -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
@@ -141,7 +157,7 @@ li{
   width:380px;
   height:350px;
   overflow: hidden;
-  margin: 40px auto;
+  margin: 40px auto; */
 
 .shimmerBG {
   animation-duration: 2.2s;
@@ -180,6 +196,7 @@ li{
 .p-12 {
   padding: 12px;
   display: flex;
+  flex-direction: column;
 }
 
 .title-line {
@@ -209,7 +226,7 @@ li{
     margin-left:20%;
   }
 
-}
+
 
 
 .m-t-24 {

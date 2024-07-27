@@ -1,16 +1,37 @@
-import { restaurants } from "../../utils/Res_dets";
+import { restaurants } from "../utils/Res_dets";
 import RestaurantCard from "./RestaurantCard";
 import Body from "./Body";
+import { useEffect } from "react";
 import { useState } from "react";
 import FilterButton from "./FilterButton";
 
 const Main= ()=>{
   const[searchText,setSearchText]=useState("");
+  const [allRestaurants, setAllRestaurants] = useState([]);
   const[filteredRestaurants,setFilteredRestaurnats]=useState(restaurants);
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+   fetchData();
+ }, []);
+
+ async function fetchData(){
+   try{
+   const data=await fetch("http://localhost:5000/api/restaurants");
+    const response=await data.json();
+
+        console.log("response",response);
+    setFilteredRestaurnats(response);
+ setAllRestaurants(response);
+ setIsLoading(false);
+}catch(error){
+   console.error("Error fetching data:", error);
+   setIsLoading(false);
+ }
+}
 
   function filterRestaurants(){
-    const filteredData= restaurants.filter((restaurant)=>
+    const filteredData= allRestaurants.filter((restaurant)=>
     restaurant.name.toLowerCase().includes(searchText.toLowerCase())
   );
 
@@ -58,9 +79,14 @@ const Main= ()=>{
                 filterFastDeliveryRestaurants={filterFastDeliveryRestaurants}
                 filterlLowPriceRestaurants={filterlLowPriceRestaurants}
             />
+
+            {isLoading?(
+               <p>Loading....</p>
+            ):(
          <Body filteredRestaurants={filteredRestaurants}/>
-       
+      )}
          </>
+        
         
     );
 };

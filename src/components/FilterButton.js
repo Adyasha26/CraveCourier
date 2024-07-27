@@ -1,4 +1,4 @@
-import { restaurants } from "../../utils/Res_dets";
+import { restaurants } from "../utils/Res_dets";
 
 const FilterButton=(props)=>{
     function getTopRatedRestaurants(){
