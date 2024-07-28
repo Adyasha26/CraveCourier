@@ -3,20 +3,20 @@ import { useSelector } from "react-redux";
 import { useContext, useState } from "react";
 import userContext from "../utils/userContext";
 import { CartContext } from "../utils/cartContext";
+
 import Login from "./Login";
 
 
-const Header=()=>{
+const Header=({ setCartOpen })=>{
     const cartItems=useSelector((store)=>store.cart.items);
     const currentUser = useContext(userContext);
-    const { cart } = useContext(CartContext)|| { cart: [] };;
+    const { cart } = useContext(CartContext)|| { cart: [] };
+
     console.log("cart", cart);
     console.log("cart-length", cart.length);
-  
     console.log("logged", currentUser);
   
     const [visible, setVisible] = useState(false);
-  
     const [isLoggedIn, setIsLoggedIn] = useState(false);
   
     const openModal = () => {
@@ -45,7 +45,11 @@ const Header=()=>{
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/about">AboutUs</Link></li>
                 <li><Link to="/contact">ContactUs</Link></li>
-                <li><Link to="/cart">Cart- {cart.length} items</Link></li>
+                <li>
+                  <button onClick={() => setCartOpen(true)}>
+                   Cart - {cart.length} items
+            </button>
+          </li>
                 <li>
             {isLoggedIn ? (
               <button onClick={handleLogout}>Logout</button>

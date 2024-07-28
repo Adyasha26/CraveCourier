@@ -7,6 +7,7 @@ import RestaurantCard from "./src/components/RestaurantCard";
 import Main from "./src/components/Main";
 import Footer from  "./src/components/Footer";
 import Body from "./src/components/Body";
+import Cart from "./src/components/Cart";
 import FilterButton from "./src/components/FilterButton";
 import Try from "./src/components/Try";
 import { Provider } from "react-redux";
@@ -69,14 +70,16 @@ const appRouter= createBrowserRouter([
 
 function App(){
   const [userName, setUserName] = useState("Name");
+  const [cartOpen, setCartOpen] = useState(false);
     return (
         <Provider store={appStore}>
             <userContext.Provider value={{ currentUser: userName, setUserName }}>
            <CartProvider>
-            <Header/>
+           <Header setCartOpen={setCartOpen} />
             <Outlet/>
             <Footer/>
-            </CartProvider>
+            <Cart open={cartOpen} setOpen={setCartOpen} />
+           </CartProvider>
             </userContext.Provider>
         </Provider>
    

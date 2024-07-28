@@ -1,10 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { CartContext } from "../utils/cartContext";
 
-const Cart = () => {
-  const [open, setOpen] = useState(true);
+const Cart = ({ open, setOpen }) => {
   const { cart, removeFromCart } = useContext(CartContext);
 
   const calculateSubtotal = () => {
@@ -17,7 +16,6 @@ const Cart = () => {
         transition
         className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity duration-500 ease-in-out data-[closed]:opacity-0"
       />
-
       <div className="fixed inset-0 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
@@ -41,12 +39,11 @@ const Cart = () => {
                       </button>
                     </div>
                   </div>
-
                   <div className="mt-8">
                     <div className="flow-root">
                       <ul role="list" className="-my-6 divide-y divide-gray-200">
-                        {cart.map((product) => (
-                          <li key={product.id} className="flex py-6">
+                        {cart.map((product, index) => (
+                          <li key={index} className="flex py-6">
                             <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                               <img
                                 alt={product.imageAlt}
@@ -54,7 +51,6 @@ const Cart = () => {
                                 className="h-full w-full object-cover object-center"
                               />
                             </div>
-
                             <div className="ml-4 flex flex-1 flex-col">
                               <div>
                                 <div className="flex justify-between text-base font-medium text-gray-900">
@@ -67,7 +63,6 @@ const Cart = () => {
                               </div>
                               <div className="flex flex-1 items-end justify-between text-sm">
                                 <p className="text-gray-500">Qty {product.quantity}</p>
-
                                 <div className="flex">
                                   <button
                                     type="button"
@@ -85,7 +80,6 @@ const Cart = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                   <div className="flex justify-between text-base font-medium text-gray-900">
                     <p>Subtotal</p>
@@ -122,5 +116,5 @@ const Cart = () => {
     </Dialog>
   );
 };
- 
+
 export default Cart;
