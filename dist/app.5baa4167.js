@@ -36506,11 +36506,16 @@ var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _login = require("./Login");
 var _loginDefault = parcelHelpers.interopDefault(_login);
+var _loginPrompt = require("./LoginPrompt");
+var _loginPromptDefault = parcelHelpers.interopDefault(_loginPrompt);
 var _s = $RefreshSig$();
 const Body = ({ filteredRestaurants })=>{
     _s();
     filteredRestaurants = filteredRestaurants || [];
     const [isLoading, setIsLoading] = (0, _react.useState)(true);
+    const [isLoginPromptVisible, setIsLoginPromptVisible] = (0, _react.useState)(false);
+    const { currentUser } = (0, _react.useContext)((0, _userContextDefault.default));
+    const navigate = (0, _reactRouterDom.useNavigate)();
     console.log("Restaurant ID:", (0, _resDets.restaurants).id);
     (0, _react.useEffect)(()=>{
         // Simulating a 2 seconds delay
@@ -36519,60 +36524,83 @@ const Body = ({ filteredRestaurants })=>{
         }, 2000);
         return ()=>clearTimeout(timer);
     }, []);
+    const handleCardClick = (restaurantId)=>{
+        if (!currentUser || currentUser == "Name") setIsLoginPromptVisible(true);
+        else // Navigate to restaurant details or perform other actions
+        navigate(`/restaurant/${restaurantId}`);
+    };
+    const closeModal = ()=>{
+        setIsLoginPromptVisible(false);
+    };
     console.log("body", filteredRestaurants.length);
     console.log("body", filteredRestaurants);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4",
-            children: [
-                Array.from({
-                    length: 9
-                }).map((_, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {
-                        height: 350,
-                        width: 380,
-                        rounded: true
-                    }, index, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 43,
-                        columnNumber: 17
-                    }, undefined)),
-                " "
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Body.js",
-            lineNumber: 41,
-            columnNumber: 13
-        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "res-cards",
-            children: filteredRestaurants.map((restaurant)=>{
-                console.log("Restaurant :", restaurant);
-                console.log("Restaurant ID:", restaurant.id);
-                return(//   <div key={restaurant._id} onClick={() => handleCardClick(restaurant._id)}>
-                //   <RestaurantCard details={restaurant} />
-                // </div>  
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: `/restaurant/${restaurant._id}`,
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                        details: restaurant
+        children: [
+            isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4",
+                children: [
+                    Array.from({
+                        length: 9
+                    }).map((_, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {
+                            height: 350,
+                            width: 380,
+                            rounded: true
+                        }, index, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 63,
+                            columnNumber: 17
+                        }, undefined)),
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 61,
+                columnNumber: 13
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-cards cursor-pointer",
+                children: filteredRestaurants.map((restaurant)=>{
+                    console.log("Restaurant :", restaurant);
+                    console.log("Restaurant ID:", restaurant.id);
+                    return(//   <div key={restaurant._id} onClick={() => handleCardClick(restaurant._id)}>
+                    //   <RestaurantCard details={restaurant} />
+                    // </div>  
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        //  details={restaurant} 
+                        onClick: ()=>handleCardClick(restaurant._id),
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                            details: restaurant
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 79,
+                            columnNumber: 23
+                        }, undefined)
                     }, restaurant._id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 55,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 54,
-                    columnNumber: 19
-                }, undefined));
-            })
-        }, void 0, false, {
-            fileName: "src/components/Body.js",
-            lineNumber: 45,
-            columnNumber: 11
-        }, undefined)
-    }, void 0, false);
+                        lineNumber: 73,
+                        columnNumber: 25
+                    }, undefined));
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 65,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPromptDefault.default), {
+                isVisible: isLoginPromptVisible,
+                onClose: closeModal
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 87,
+                columnNumber: 10
+            }, undefined)
+        ]
+    }, void 0, true);
 };
-_s(Body, "qctHN9ngwCjzpOfmUpPq1BFxASU=");
+_s(Body, "VLD0i/gKARGJAvHscfeUux+4i5A=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -36583,7 +36611,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/Res_dets":"fXLL7","react-router-dom":"9xmpe","./RestaurantCard":"bMboU","../utils/userContext":"eBA1b","./Shimmer":"g6ZGj","./Login":"hsmcH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g6ZGj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/Res_dets":"fXLL7","react-router-dom":"9xmpe","./RestaurantCard":"bMboU","../utils/userContext":"eBA1b","./Shimmer":"g6ZGj","./Login":"hsmcH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./LoginPrompt":"4r6oC"}],"g6ZGj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36663,6 +36691,72 @@ var _c;
 $RefreshReg$(_c, "Shimmer");
 
   $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4r6oC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$703f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$703f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const LoginPrompt = ({ isVisible, onClose })=>{
+    if (!isVisible) return null;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-white p-6 rounded shadow-md text-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-lg font-bold mb-4",
+                    children: "Please Log In"
+                }, void 0, false, {
+                    fileName: "src/components/LoginPrompt.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "mb-4",
+                    children: "You need to log in to view this restaurant."
+                }, void 0, false, {
+                    fileName: "src/components/LoginPrompt.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-blue-500 text-white px-4 py-2 rounded",
+                    onClick: onClose,
+                    children: "Close"
+                }, void 0, false, {
+                    fileName: "src/components/LoginPrompt.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/LoginPrompt.js",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/LoginPrompt.js",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = LoginPrompt;
+exports.default = LoginPrompt;
+var _c;
+$RefreshReg$(_c, "LoginPrompt");
+
+  $parcel$ReactRefreshHelpers$703f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
