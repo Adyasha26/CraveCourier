@@ -2978,6 +2978,10 @@ var _appStoreDefault = parcelHelpers.interopDefault(_appStore);
 var _cartContext = require("./src/utils/cartContext");
 var _userContext = require("./src/utils/userContext");
 var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _about = require("./src/components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _help = require("./src/components/Help");
+var _helpDefault = parcelHelpers.interopDefault(_help);
 var _s = $RefreshSig$();
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
@@ -2985,12 +2989,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 29,
+            lineNumber: 31,
             columnNumber: 13
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 30,
+            lineNumber: 32,
             columnNumber: 18
         }, undefined),
         children: [
@@ -2998,7 +3002,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 20
                 }, undefined),
                 children: [
@@ -3006,7 +3010,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 38,
+                            lineNumber: 40,
                             columnNumber: 24
                         }, undefined)
                     }
@@ -3014,9 +3018,9 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
             },
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tryDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 44,
+                    lineNumber: 46,
                     columnNumber: 20
                 }, undefined)
             },
@@ -3024,7 +3028,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/home",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 48,
+                    lineNumber: 50,
                     columnNumber: 20
                 }, undefined),
                 children: [
@@ -3032,17 +3036,17 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 52,
+                            lineNumber: 54,
                             columnNumber: 24
                         }, undefined)
                     }
                 ]
             },
             {
-                path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                path: "/help",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _helpDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 58,
+                    lineNumber: 60,
                     columnNumber: 20
                 }, undefined)
             },
@@ -3050,7 +3054,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantDetailsDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 62,
+                    lineNumber: 64,
                     columnNumber: 21
                 }, undefined)
             }
@@ -3074,17 +3078,17 @@ function App() {
                         setCartOpen: setCartOpen
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 78,
+                        lineNumber: 80,
                         columnNumber: 12
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 79,
+                        lineNumber: 81,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 80,
+                        lineNumber: 82,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {
@@ -3092,23 +3096,23 @@ function App() {
                         setOpen: setCartOpen
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 81,
+                        lineNumber: 83,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "app.js",
-                lineNumber: 77,
+                lineNumber: 79,
                 columnNumber: 12
             }, this)
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 76,
+            lineNumber: 78,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 75,
+        lineNumber: 77,
         columnNumber: 9
     }, this);
 }
@@ -3118,7 +3122,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "app.js",
-    lineNumber: 88,
+    lineNumber: 90,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3129,7 +3133,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./app.css":"4slL4","./src/components/Header":"hsJbF","./src/components/RestaurantCard":"bMboU","./src/components/Main":"jWapa","./src/components/Footer":"8pPOA","./src/components/Body":"8yaV8","./src/components/Cart":"h8J3U","./src/components/FilterButton":"biGvw","./src/components/Try":"dlph4","react-redux":"62sf7","./src/components/Error":"kvula","./src/components/Contact":"cgAOG","./src/components/RestaurantDetails":"95Td6","react-router-dom":"9xmpe","./src/utils/appStore":"6A5Ux","./src/utils/cartContext":"fwFTS","./src/utils/userContext":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./app.css":"4slL4","./src/components/Header":"hsJbF","./src/components/RestaurantCard":"bMboU","./src/components/Main":"jWapa","./src/components/Footer":"8pPOA","./src/components/Body":"8yaV8","./src/components/Cart":"h8J3U","./src/components/FilterButton":"biGvw","./src/components/Try":"dlph4","react-redux":"62sf7","./src/components/Error":"kvula","./src/components/Contact":"cgAOG","./src/components/RestaurantDetails":"95Td6","react-router-dom":"9xmpe","./src/utils/appStore":"6A5Ux","./src/utils/cartContext":"fwFTS","./src/utils/userContext":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/About":"9R1Eu","./src/components/Help":"fQMB0"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27374,16 +27378,17 @@ const Header = ({ setCartOpen })=>{
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        className: "navitems",
+                        className: "navitems font-bold",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:focus:ring-blue-800",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/home",
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 45,
-                                    columnNumber: 21
+                                    columnNumber: 188
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27391,13 +27396,14 @@ const Header = ({ setCartOpen })=>{
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:focus:ring-blue-800",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/about",
                                     children: "AboutUs"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 46,
-                                    columnNumber: 21
+                                    columnNumber: 188
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27405,13 +27411,14 @@ const Header = ({ setCartOpen })=>{
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:focus:ring-blue-800",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/contact",
-                                    children: "ContactUs"
+                                    to: "/help",
+                                    children: "Help"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 47,
-                                    columnNumber: 21
+                                    columnNumber: 188
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27419,45 +27426,73 @@ const Header = ({ setCartOpen })=>{
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    onClick: ()=>setCartOpen(true),
-                                    children: [
-                                        "Cart - ",
-                                        cart.length,
-                                        " items"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Header.js",
-                                    lineNumber: 49,
-                                    columnNumber: 19
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 48,
-                                columnNumber: 17
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:focus:ring-blue-800",
                                     onClick: handleLogout,
                                     children: "Logout"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 55,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800",
+                                    className: "block  text-black hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:white font-medium rounded-lg text-base px-5 py-2.5 text-center dark:focus:ring-blue-800",
                                     type: "button",
                                     onClick: openModal,
                                     children: "Login"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 57,
+                                    lineNumber: 53,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 53,
+                                lineNumber: 49,
                                 columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "relative",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>setCartOpen(true),
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            xmlns: "http://www.w3.org/2000/svg",
+                                            fill: "none",
+                                            viewBox: "0 0 24 24",
+                                            strokeWidth: "1.5",
+                                            stroke: "currentColor",
+                                            className: "h-9 w-9",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                d: "M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Header.js",
+                                                lineNumber: 73,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 65,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "absolute top-0 left-7 bg-red-500 text-white text-sm rounded-full h-5 w-5 flex items-center justify-center",
+                                            children: cart.length
+                                        }, void 0, false, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 79,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 64,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 63,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -27477,7 +27512,7 @@ const Header = ({ setCartOpen })=>{
                 setLoggedIn: setLoggedIn
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 69,
+                lineNumber: 87,
                 columnNumber: 17
             }, undefined)
         ]
@@ -45374,6 +45409,1421 @@ const cartSlice = (0, _toolkit.createSlice)({
 const { addItem, clearCart } = cartSlice.actions;
 exports.default = cartSlice.reducer;
 
-},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["adBpN","1xC6H","igcvL"], "igcvL", "parcelRequire602a")
+},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9R1Eu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5b98.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const About1 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+            className: "overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container mx-auto",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-wrap items-center justify-between -mx-4",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4 lg:w-6/12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex items-center -mx-3 sm:-mx-4",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "w-full px-3 sm:px-4 xl:w-1/2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "py-3 sm:py-4",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    src: "https://i.ibb.co/gFb3ns6/image-1.jpg",
+                                                    alt: "",
+                                                    className: "w-full rounded-2xl"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.js",
+                                                    lineNumber: 13,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/About.js",
+                                                lineNumber: 12,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "py-3 sm:py-4",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    src: "https://i.ibb.co/rfHFq15/image-2.jpg",
+                                                    alt: "",
+                                                    className: "w-full rounded-2xl"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.js",
+                                                    lineNumber: 20,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/About.js",
+                                                lineNumber: 19,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 11,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "w-full px-3 sm:px-4 xl:w-1/2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "relative z-10 my-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    src: "https://i.ibb.co/9y7nYCD/image-3.jpg",
+                                                    alt: "",
+                                                    className: "w-full rounded-2xl"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.js",
+                                                    lineNumber: 29,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "absolute -right-7 -bottom-7 z-[-1]",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        width: 134,
+                                                        height: 106,
+                                                        viewBox: "0 0 134 106",
+                                                        fill: "none",
+                                                        xmlns: "http://www.w3.org/2000/svg",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 42,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 49,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 56,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 63,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3334",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3334 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 70,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 77,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 84,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 91,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 98,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: 104,
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 104)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 105,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "89.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 89.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 112,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "89.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 89.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 119,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "89.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 89.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 126,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "89.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 89.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 133,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "89.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 89.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 140,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "89.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 89.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 147,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "89.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 89.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 154,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "89.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 89.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 161,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "89.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 89.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 168,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "89.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 89.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 175,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "74.6673",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 74.6673)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 182,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "31.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 31.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 189,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 196,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "31.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 31.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 203,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 210,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "31.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 31.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 217,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 224,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "31.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 31.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 231,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 238,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "30.9998",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 30.9998)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 245,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 252,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "30.9998",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 30.9998)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 259,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 266,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "30.9998",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 30.9998)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 273,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 280,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "30.9998",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 30.9998)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 287,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 294,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "30.9998",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 30.9998)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 301,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "74.6668",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 74.6668)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 308,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "30.9998",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 30.9998)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 315,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 322,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 329,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 336,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 343,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 350,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 357,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 364,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 371,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 378,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 385,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 392,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 399,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 406,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 413,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 420,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 427,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 434,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 441,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "60.0003",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 60.0003)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 448,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "16.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 16.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 455,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "45.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 45.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 462,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "1.66667",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 1.66667 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 469,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "45.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 45.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 476,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "16.3333",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 16.3333 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 483,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "45.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 45.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 490,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 31,
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 31 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 497,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "45.3333",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 45.3333)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 504,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "45.6667",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 45.6667 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 511,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "45.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 45.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 518,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "60.3333",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 60.3333 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 525,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "45.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 45.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 532,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "88.6667",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 88.6667 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 539,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "45.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 45.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 546,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "117.667",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 117.667 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 553,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "45.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 45.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 560,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "74.6667",
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 74.6667 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 567,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "45.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 45.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 574,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 103,
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 103 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 581,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "45.3338",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 45.3338)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 588,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: 132,
+                                                                cy: "1.66683",
+                                                                r: "1.66667",
+                                                                transform: "rotate(-90 132 1.66683)",
+                                                                fill: "#3056D3"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/About.js",
+                                                                lineNumber: 595,
+                                                                columnNumber: 25
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/About.js",
+                                                        lineNumber: 35,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.js",
+                                                    lineNumber: 34,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.js",
+                                            lineNumber: 28,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 27,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 10,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 9,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4 lg:w-1/2 xl:w-5/12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mt-10 lg:mt-0",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "block mb-4 text-lg font-semibold text-primary",
+                                        children: "Why Choose Us"
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 611,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]",
+                                        children: "Make your customers happy by giving services."
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 614,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "mb-5 text-base text-body-color dark:text-dark-6",
+                                        children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less."
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 617,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "mb-8 text-base text-body-color dark:text-dark-6",
+                                        children: "A domain name is one of the first steps to establishing your brand. Secure a consistent brand image with a domain name that matches your business."
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 622,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "javascript:void(0)",
+                                        className: "inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90",
+                                        children: "Get Started"
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 627,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 610,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 609,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 8,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/About.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c = About1;
+exports.default = About1;
+var _c;
+$RefreshReg$(_c, "About1");
+
+  $parcel$ReactRefreshHelpers$5b98.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fQMB0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9c0f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9c0f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const Accordion = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "-mx-4 flex flex-wrap",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "mb-2 block text-lg font-semibold text-primary",
+                                        children: "FAQ"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 10,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "mb-4 text-3xl font-bold text-dark dark:text-blue sm:text-[40px]/[48px]",
+                                        children: "Any Questions? Look Here"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 13,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-base text-body-color dark:text-dark-6",
+                                        children: "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 16,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Help.js",
+                                lineNumber: 9,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Help.js",
+                            lineNumber: 8,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Help.js",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "-mx-4 flex flex-wrap",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-full px-4 lg:w-1/2",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long we deliver your first blog post?",
+                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 26,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long we deliver your first blog post?",
+                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 30,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long we deliver your first blog post?",
+                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 34,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Help.js",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-full px-4 lg:w-1/2",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long we deliver your first blog post?",
+                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 40,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long we deliver your first blog post?",
+                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 44,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long we deliver your first blog post?",
+                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 48,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Help.js",
+                                lineNumber: 39,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Help.js",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Help.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute bottom-0 right-0 z-[-1]",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                    width: "1440",
+                    height: "886",
+                    viewBox: "0 0 1440 886",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                            opacity: "0.5",
+                            d: "M193.307 -273.321L1480.87 1014.24L1121.85 1373.26C1121.85 1373.26 731.745 983.231 478.513 729.927C225.976 477.317 -165.714 85.6993 -165.714 85.6993L193.307 -273.321Z",
+                            fill: "url(#paint0_linear)"
+                        }, void 0, false, {
+                            fileName: "src/components/Help.js",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("linearGradient", {
+                                id: "paint0_linear",
+                                x1: "1308.65",
+                                y1: "1142.58",
+                                x2: "602.827",
+                                y2: "-418.681",
+                                gradientUnits: "userSpaceOnUse",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                        "stop-color": "#3056D3",
+                                        "stop-opacity": "0.36"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 78,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                        offset: "1",
+                                        "stop-color": "#F5F2FD",
+                                        "stop-opacity": "0"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 79,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                        offset: "1",
+                                        "stop-color": "#F5F2FD",
+                                        "stop-opacity": "0.096144"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 80,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Help.js",
+                                lineNumber: 70,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Help.js",
+                            lineNumber: 69,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Help.js",
+                    lineNumber: 57,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Help.js",
+                lineNumber: 56,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Help.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Accordion;
+exports.default = Accordion;
+const AccordionItem = ({ header, text })=>{
+    _s();
+    const [active, setActive] = (0, _react.useState)(false);
+    const handleToggle = ()=>{
+        event.preventDefault();
+        setActive(!active);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "mb-8 w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: `faq-btn flex w-full text-left`,
+                onClick: ()=>handleToggle(),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            className: `fill-primary stroke-primary duration-200 ease-in-out ${active ? "rotate-180" : ""}`,
+                            width: "17",
+                            height: "10",
+                            viewBox: "0 0 17 10",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z",
+                                fill: "",
+                                stroke: ""
+                            }, void 0, false, {
+                                fileName: "src/components/Help.js",
+                                lineNumber: 114,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Help.js",
+                            lineNumber: 105,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Help.js",
+                        lineNumber: 104,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            className: "mt-1 text-lg font-semibold text-dark dark:text-blue",
+                            children: header
+                        }, void 0, false, {
+                            fileName: "src/components/Help.js",
+                            lineNumber: 123,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Help.js",
+                        lineNumber: 122,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Help.js",
+                lineNumber: 100,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `pl-[62px] duration-200 ease-in-out ${active ? "block" : "hidden"}`,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "py-3 text-base leading-relaxed text-body-color dark:text-dark-6",
+                    children: text
+                }, void 0, false, {
+                    fileName: "src/components/Help.js",
+                    lineNumber: 134,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Help.js",
+                lineNumber: 129,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Help.js",
+        lineNumber: 99,
+        columnNumber: 5
+    }, undefined);
+};
+_s(AccordionItem, "1cfVChV6gA1Fk8+xDnwTj3gmgZo=");
+_c1 = AccordionItem;
+var _c, _c1;
+$RefreshReg$(_c, "Accordion");
+$RefreshReg$(_c1, "AccordionItem");
+
+  $parcel$ReactRefreshHelpers$9c0f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["adBpN","1xC6H","igcvL"], "igcvL", "parcelRequire602a")
 
 //# sourceMappingURL=app.5baa4167.js.map

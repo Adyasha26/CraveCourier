@@ -19,6 +19,8 @@ import appStore from "./src/utils/appStore";
 import { CartProvider } from "./src/utils/cartContext";
 import userContext from "./src/utils/userContext";
 import { useState } from "react";
+import About from "./src/components/About";
+import Help from "./src/components/Help";
 
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
@@ -41,7 +43,7 @@ const appRouter= createBrowserRouter([
         },
         {
           path: "/about",
-          element: <Try />, 
+          element: <About />, 
         },
         {
           path: "/home",
@@ -54,8 +56,8 @@ const appRouter= createBrowserRouter([
           ],
         },
         {
-          path: "/contact",
-          element: <Contact />, 
+          path: "/help",
+          element: <Help/>, 
         },
         {
             path:"/restaurant/:id",
