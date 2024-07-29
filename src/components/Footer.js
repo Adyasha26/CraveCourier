@@ -11,8 +11,8 @@ const Footer=()=>{
                     <ul class="list-disc list-inside space-y-8">
                         <li><a href="#" class="hover:text-sky-400 transition">Home</a></li>
 
-                        <li><a href="#" class="hover:text-sky-400 transition">About</a></li>
-                        <li><a href="#" class="hover:text-sky-400 transition">Guide</a></li>
+                        <li><a href="/about" class="hover:text-sky-400 transition">About</a></li>
+                        <li><a href="/help" class="hover:text-sky-400 transition">Guide</a></li>
                         <li><a href="#" class="hover:text-sky-400 transition">Contact</a></li>
                         
                     </ul>

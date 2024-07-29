@@ -36907,7 +36907,7 @@ const Footer = ()=>{
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        href: "#",
+                                                        href: "/about",
                                                         class: "hover:text-sky-400 transition",
                                                         children: "About"
                                                     }, void 0, false, {
@@ -36922,7 +36922,7 @@ const Footer = ()=>{
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        href: "#",
+                                                        href: "/help",
                                                         class: "hover:text-sky-400 transition",
                                                         children: "Guide"
                                                     }, void 0, false, {
@@ -46665,27 +46665,35 @@ const Accordion = ()=>{
                                 className: "w-full px-4 lg:w-1/2",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
-                                        header: "How long we deliver your first blog post?",
-                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                        header: "Can I edit my order?",
+                                        text: "Your order can be edited before it reaches the restaurant. You could contact customer support team via chat or call to do so. Once order is placed and restaurant starts preparing your food, you may not edit its contents."
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
                                         lineNumber: 26,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
-                                        header: "How long we deliver your first blog post?",
-                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                        header: "I want to cancel my order",
+                                        text: "We will do our best to accommodate your request if the order is not placed to the restaurant (Customer service number:  080-67466729). Please note that we will have a right to charge a cancellation fee up to full order value to compensate our restaurant and delivery partners if your order has been confirmed."
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
                                         lineNumber: 30,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
-                                        header: "How long we deliver your first blog post?",
-                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                        header: "Will Insta Food be accountable for quality/quantity?",
+                                        text: "Quantity and quality of the food is the restaurants' responsibility. However in case of issues with the quality or quantity, kindly submit your feedback and we will pass it on to the restaurant."
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
                                         lineNumber: 34,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "What are your delivery hours?",
+                                        text: "Our delivery hours vary for different locations and depends on availability of supply from restaurant partners."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 38,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
@@ -46698,33 +46706,41 @@ const Accordion = ()=>{
                                 className: "w-full px-4 lg:w-1/2",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
-                                        header: "How long we deliver your first blog post?",
-                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-                                    }, void 0, false, {
-                                        fileName: "src/components/Help.js",
-                                        lineNumber: 40,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
-                                        header: "How long we deliver your first blog post?",
-                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                        header: "Is there a minimum order value?",
+                                        text: "We have no minimum order value and you can order for any amount."
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
                                         lineNumber: 44,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
-                                        header: "How long we deliver your first blog post?",
-                                        text: "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                                        header: "Do you charge for delivery?",
+                                        text: "Delivery fee varies from city to city and is applicable if order value is below a certain amount. Additionally, certain restaurants might have fixed delivery fees. Delivery fee (if any) is specified on the 'Review Order' page."
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
                                         lineNumber: 48,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "How long do you take to deliver?",
+                                        text: "Standard delivery times vary by the location selected and prevailing conditions. Once you select your location, an estimated delivery time is mentioned for each restaurant."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 52,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AccordionItem, {
+                                        header: "Is single order from many restaurants possible?",
+                                        text: "We currently do not support this functionality. However, you can place orders for individual items from different restaurants."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Help.js",
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Help.js",
-                                lineNumber: 39,
+                                lineNumber: 43,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -46754,7 +46770,7 @@ const Accordion = ()=>{
                             fill: "url(#paint0_linear)"
                         }, void 0, false, {
                             fileName: "src/components/Help.js",
-                            lineNumber: 64,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
@@ -46771,7 +46787,7 @@ const Accordion = ()=>{
                                         "stop-opacity": "0.36"
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
-                                        lineNumber: 78,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -46780,7 +46796,7 @@ const Accordion = ()=>{
                                         "stop-opacity": "0"
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
-                                        lineNumber: 79,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -46789,29 +46805,29 @@ const Accordion = ()=>{
                                         "stop-opacity": "0.096144"
                                     }, void 0, false, {
                                         fileName: "src/components/Help.js",
-                                        lineNumber: 80,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Help.js",
-                                lineNumber: 70,
+                                lineNumber: 78,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Help.js",
-                            lineNumber: 69,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Help.js",
-                    lineNumber: 57,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Help.js",
-                lineNumber: 56,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined)
         ]
@@ -46851,17 +46867,17 @@ const AccordionItem = ({ header, text })=>{
                                 stroke: ""
                             }, void 0, false, {
                                 fileName: "src/components/Help.js",
-                                lineNumber: 114,
+                                lineNumber: 122,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Help.js",
-                            lineNumber: 105,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Help.js",
-                        lineNumber: 104,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46871,18 +46887,18 @@ const AccordionItem = ({ header, text })=>{
                             children: header
                         }, void 0, false, {
                             fileName: "src/components/Help.js",
-                            lineNumber: 123,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Help.js",
-                        lineNumber: 122,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Help.js",
-                lineNumber: 100,
+                lineNumber: 108,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46892,18 +46908,18 @@ const AccordionItem = ({ header, text })=>{
                     children: text
                 }, void 0, false, {
                     fileName: "src/components/Help.js",
-                    lineNumber: 134,
+                    lineNumber: 142,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Help.js",
-                lineNumber: 129,
+                lineNumber: 137,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Help.js",
-        lineNumber: 99,
+        lineNumber: 107,
         columnNumber: 5
     }, undefined);
 };
