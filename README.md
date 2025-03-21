@@ -1,9 +1,13 @@
 🍔 CraveCourier – Your Ultimate Food Delivery App 🚀
 
 📌 Features
+
 ✔️ User Authentication: Secure login/signup with JWT authentication.
+
 ✔️ Restaurant Listings: Browse and filter a wide range of restaurants & cuisines.
+
 ✔️ Cart & Checkout: Add items to the cart, apply coupons, and place orders securely.
+
 ✔️ Payment Integration: Supports Razorpay/Stripe/PayPal for seamless transactions.
 
 
