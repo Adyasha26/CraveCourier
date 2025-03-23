@@ -7,14 +7,14 @@ const RestaurantCard=(props)=>{
     // console.log("props",props);
     // const{name = 'Unknown', cuisines = 'Unknown', avgRating = '-', images = '', costForTwoString = '-' } = props.details || {};
     const{name,cuisines,avgRating,costForTwoString,cloudinaryImageId,deliveryTime}=props.details;
-    
+    console.log("deliveryTime"+deliveryTime);
     return(
         <div className="res-card flex flex-col w-380 h-350 rounded-2xl mb-15 relative">
             
             <div className="res-image w-95% h-60%">
                 <img className="res-img m-2 w-full h-90% relative rounded-lg z-[-1]" src={`${IMG_URL}${cloudinaryImageId}`} alt="Restaurant Image"></img>
 
-              
+        
              <div className="float-container">
 
                 <div className="delivery-time">

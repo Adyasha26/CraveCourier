@@ -39,7 +39,7 @@ exports.fetch=(req,res)=>{
 
 exports.fetchOne=(req,res)=>{
     const _id=req.params.id;
-
+console.log("_id"+_id);
     restaurantModel
     .find({ _id: _id})
     .then((data)=> {

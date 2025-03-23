@@ -13,7 +13,7 @@ const verifyToken=(req,res,next)=>{
             if(err){
                 res.status(401).send("Invalid JWT Token");
             }
-            usersModel.findById(verifiedToken._id).then((user)=>{
+            usersModel.findById(verifiedToken.id).then((user)=>{
                 req.user=user;
                 next();
             })

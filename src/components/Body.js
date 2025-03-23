@@ -51,8 +51,8 @@ const Body =({filteredRestaurants}) =>{
  
 
 
-    console.log("body",filteredRestaurants.length);
-    console.log("body",filteredRestaurants);
+    // console.log("body",filteredRestaurants.length);
+    // console.log("body",filteredRestaurants);
     
     
     return(
@@ -65,7 +65,7 @@ const Body =({filteredRestaurants}) =>{
           <div className="res-cards cursor-pointer">
                 {filteredRestaurants.map((restaurant) => {
                              console.log("Restaurant :", restaurant);
-                          console.log("Restaurant ID:", restaurant.id);
+                          console.log("Restaurant ID:", restaurant._id);
                           return(
                           //   <div key={restaurant._id} onClick={() => handleCardClick(restaurant._id)}>
                           //   <RestaurantCard details={restaurant} />

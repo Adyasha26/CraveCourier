@@ -8,6 +8,7 @@ const restaurantMenu=(id)=>{
     console.log("id",id);
 
     const accessToken=localStorage.getItem("accessToken");
+    console.log("accessToken"+accessToken);
      
     useEffect(()=>{
         fetchData();

@@ -13,7 +13,8 @@ const RestaurantDetails = () => {
   const params=useParams();
   const { id } = useParams();
 
-  const { addToCart } = useContext(CartContext);
+  const { addToCart ,cart} = useContext(CartContext);
+
   // const { menuData } = restaurantMenu(id);
   console.log("params:",params);
   console.log("id",id);
@@ -30,6 +31,11 @@ const RestaurantDetails = () => {
   
     // dispatch(addItem(item));
   }
+
+  const getItemQuantity = (itemId) => {
+    const cartItem = cart.find(item => item._id === itemId);
+    return cartItem ? cartItem.quantity : 0;
+  };
 
   return (
     <div className="flex text-center">
@@ -58,7 +64,7 @@ const RestaurantDetails = () => {
                   className="p-2 mx-16 rounded-lg bg-black text-white shadow-lg"
                   onClick={() => handleAddItem(item)}
                 >
-                  Add +
+                  Add + (Qty: {getItemQuantity(item._id)})
                 </button>
               </div>
               <img src={IMG_URL + item.imageID} className="w-full" alt={item.name}/>

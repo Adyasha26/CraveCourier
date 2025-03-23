@@ -50,10 +50,11 @@ exports.login=(req,res)=>{
             .status(401).send("Invalid Password.Please enter correct password");
         }
 
-
-    let accessToken=jwt.sign({id:data.id},"secretKey",{expiresIn:"1h",
-
+        
+    let accessToken=jwt.sign({id:data._id},"secretKey",{expiresIn:"1h",
+      
     });
+    
 
     res.send({
         user:{
