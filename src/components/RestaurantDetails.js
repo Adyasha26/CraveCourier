@@ -27,6 +27,7 @@ const RestaurantDetails = () => {
    const itemCards = menu_data.length > 0 ? menu_data[0]?.menuItems : [];
 
    function handleAddItem(item) {
+    console.log("Adding item to cart:", item);
     addToCart(item);
   
     // dispatch(addItem(item));
@@ -64,10 +65,10 @@ const RestaurantDetails = () => {
                   className="p-2 mx-16 rounded-lg bg-black text-white shadow-lg"
                   onClick={() => handleAddItem(item)}
                 >
-                  Add + (Qty: {getItemQuantity(item._id)})
+                  Add+
                 </button>
               </div>
-              <img src={IMG_URL + item.imageID} className="w-full" alt={item.name}/>
+              <img src={IMG_URL + item.imageID} className="w-40" alt={item.name}/>
             </div>
           </div>
         ))}

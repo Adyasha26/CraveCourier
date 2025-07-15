@@ -62,7 +62,7 @@ exports.updateOne=(req,res)=>{
     const _id=req.params.id;
 
     restaurantModel
-    .findByIdandUpdate(_id,{avgRating:"4.0"})
+    .findByIdAndUpdate(_id,req.body, { new: true })
     .then((data)=> {
         if(!data){
            res.status(404).json({message:"Data not found"});
@@ -79,7 +79,7 @@ exports.delete=(req,res)=>{
     const _id=req.params.id;
 
     restaurantModel
-    .findByIdandDelete(_id)
+    .findByIdAndDelete(_id)
     .then((data)=> {
         if(!data){
            res.status(404).json({message:"Data not found"});

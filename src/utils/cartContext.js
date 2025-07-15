@@ -9,10 +9,10 @@ const CartProvider = ({ children }) => {
     // setCart([...cart, item]);
    
     setCart((prevCart) => {
-      const existingItem = prevCart.find((cartItem) => cartItem._id === item._id);
+      const existingItem = prevCart.find((cartItem) => cartItem.name === item.name);
       if (existingItem) {
         return prevCart.map((cartItem) =>
-          cartItem._id === item._id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+          cartItem.name === item.name ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
         );
       } else {
         return [...prevCart, { ...item, quantity: 1 }];
